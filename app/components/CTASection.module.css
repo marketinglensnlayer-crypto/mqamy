@@ -1,0 +1,41 @@
+.ctaSection {
+    padding: var(--spacing-4xl) 0;
+    background: linear-gradient(135deg, rgba(255, 136, 113, 0.1) 0%, rgba(255, 136, 113, 0.05) 100%);
+    border-top: 1px solid rgba(255, 136, 113, 0.2);
+    border-bottom: 1px solid rgba(255, 136, 113, 0.2);
+}
+
+.ctaWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+}
+
+.ctaContent h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    margin-bottom: var(--spacing-sm);
+}
+
+.ctaContent p {
+    color: var(--color-gray-400);
+}
+
+.ctaButtons {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+    .ctaWrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ctaButtons {
+        justify-content: center;
+    }
+}

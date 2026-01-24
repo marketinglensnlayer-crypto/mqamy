@@ -1,0 +1,111 @@
+.agentSection {
+    padding: var(--spacing-4xl) 0;
+    background: var(--color-dark);
+}
+
+.agentWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+}
+
+.agentImageFrame {
+    position: relative;
+}
+
+.agentImageFrame img {
+    box-shadow: var(--shadow-xl);
+}
+
+.agentBadge {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-dark);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.agentName {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+}
+
+.agentTitle {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xl);
+}
+
+.agentQuote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--color-gray-300);
+    line-height: 1.8;
+    padding-left: var(--spacing-xl);
+    border-left: 3px solid var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.agentCredentials {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.credential {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    color: var(--color-gray-400);
+    font-size: 0.95rem;
+}
+
+.credential i {
+    width: 20px;
+    color: var(--color-primary);
+}
+
+@media (max-width: 992px) {
+    .agentWrapper {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .agentImageFrame {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .agentContent {
+        text-align: center;
+    }
+
+    .agentQuote {
+        border-left: none;
+        padding-left: 0;
+        border-top: 3px solid var(--color-primary);
+        padding-top: var(--spacing-lg);
+    }
+
+    .agentCredentials {
+        align-items: center;
+    }
+
+    .agentCta {
+        display: flex;
+        justify-content: center;
+    }
+}

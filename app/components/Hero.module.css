@@ -1,0 +1,294 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80') center/cover;
+    padding-top: 80px;
+    /* Account for navbar */
+}
+
+.heroVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 15, 26, 0.4) 0%, rgba(15, 15, 26, 0.9) 100%);
+    z-index: 1;
+}
+
+.heroGrid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--spacing-4xl);
+    align-items: center;
+    padding: var(--spacing-4xl) 0;
+}
+
+.heroContentText {
+    text-align: left;
+}
+
+.heroContentText>* {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.heroBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: rgba(255, 136, 113, 0.15);
+    border: 1px solid rgba(255, 136, 113, 0.3);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xl);
+    backdrop-filter: blur(10px);
+    animation-delay: 0.1s;
+}
+
+.heroTitle {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: -0.02em;
+    animation-delay: 0.2s;
+}
+
+.heroSubtitle {
+    font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+    color: var(--color-gray-300);
+    margin-bottom: var(--spacing-2xl);
+    max-width: 600px;
+    animation-delay: 0.3s;
+}
+
+.heroCta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-3xl);
+    animation-delay: 0.4s;
+}
+
+.heroStats {
+    display: flex;
+    gap: var(--spacing-3xl);
+    padding-top: var(--spacing-2xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    animation-delay: 0.5s;
+}
+
+.stat {
+    text-align: left;
+}
+
+.statNumber {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.statLabel {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-gray-400);
+    margin-top: var(--spacing-xs);
+}
+
+/* Form Styles */
+.heroFormWrapper {
+    background: rgba(15, 15, 26, 0.7);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    animation: fadeInRight 0.8s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.heroFormWrapper h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-white);
+}
+
+.formGroup {
+    margin-bottom: var(--spacing-lg);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    color: var(--color-white);
+    transition: var(--transition-normal);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+    color: var(--color-gray-500);
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    border-color: var(--color-primary);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 136, 113, 0.1);
+    outline: none;
+}
+
+.formGroup select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239999A8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+.formGroup select option {
+    background: var(--color-gray-800);
+    color: var(--color-white);
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-gray-400);
+    font-size: 0.8rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+@media (max-width: 992px) {
+    .heroGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
+        text-align: center;
+        padding-top: var(--spacing-xl);
+    }
+
+    .heroContentText {
+        text-align: center;
+    }
+
+    .heroSubtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heroCta {
+        justify-content: center;
+    }
+
+    .heroStats {
+        justify-content: center;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .stat {
+        text-align: center;
+    }
+
+    .heroFormWrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .heroStats {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .heroCta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroCta :global(.btn) {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .heroFormWrapper {
+        width: 100%;
+        max-width: 100%;
+        padding: var(--spacing-md);
+        margin: 0;
+    }
+}
