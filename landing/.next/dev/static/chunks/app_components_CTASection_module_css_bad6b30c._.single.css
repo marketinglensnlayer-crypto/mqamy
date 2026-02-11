@@ -1,0 +1,44 @@
+/* [project]/app/components/CTASection.module.css [app-client] (css) */
+.CTASection-module__MrHK-a__ctaSection {
+  padding: var(--spacing-4xl) 0;
+  background: linear-gradient(135deg, #ff88711a 0%, #ff88710d 100%);
+  border-top: 1px solid #ff887133;
+  border-bottom: 1px solid #ff887133;
+}
+
+.CTASection-module__MrHK-a__ctaWrapper {
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-2xl);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.CTASection-module__MrHK-a__ctaContent h2 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--spacing-sm);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.CTASection-module__MrHK-a__ctaContent p {
+  color: var(--color-gray-400);
+}
+
+.CTASection-module__MrHK-a__ctaButtons {
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .CTASection-module__MrHK-a__ctaWrapper {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .CTASection-module__MrHK-a__ctaButtons {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=app_components_CTASection_module_css_bad6b30c._.single.css.map*/

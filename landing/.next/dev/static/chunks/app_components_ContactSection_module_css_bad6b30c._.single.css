@@ -1,0 +1,99 @@
+/* [project]/app/components/ContactSection.module.css [app-client] (css) */
+.ContactSection-module__htTnOq__contactSection {
+  padding: var(--spacing-4xl) 0;
+  background: var(--color-darker);
+}
+
+.ContactSection-module__htTnOq__contactGrid {
+  gap: var(--spacing-4xl);
+  grid-template-columns: 1fr 1.2fr;
+  display: grid;
+}
+
+.ContactSection-module__htTnOq__contactInfo h3, .ContactSection-module__htTnOq__contactFormWrapper h3 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--spacing-xl);
+  font-size: 1.5rem;
+}
+
+.ContactSection-module__htTnOq__contactItem {
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  display: flex;
+}
+
+.ContactSection-module__htTnOq__contactItem i {
+  border-radius: var(--radius-md);
+  width: 45px;
+  height: 45px;
+  color: var(--color-primary);
+  background: #ff88711a;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ContactSection-module__htTnOq__contactLabel {
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-xs);
+  font-size: .8rem;
+  display: block;
+}
+
+.ContactSection-module__htTnOq__contactItem a:hover {
+  color: var(--color-primary);
+}
+
+.ContactSection-module__htTnOq__contactFormWrapper {
+  background: var(--color-gray-800);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-lg);
+}
+
+.ContactSection-module__htTnOq__formGroup {
+  margin-bottom: var(--spacing-lg);
+}
+
+.ContactSection-module__htTnOq__formGroup input, .ContactSection-module__htTnOq__formGroup select, .ContactSection-module__htTnOq__formGroup textarea {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-gray-700);
+  border-radius: var(--radius-md);
+  color: var(--color-white);
+  transition: var(--transition-normal);
+  border: 1px solid #ffffff1a;
+}
+
+.ContactSection-module__htTnOq__formGroup input::placeholder, .ContactSection-module__htTnOq__formGroup textarea::placeholder {
+  color: var(--color-gray-500);
+}
+
+.ContactSection-module__htTnOq__formGroup input:focus, .ContactSection-module__htTnOq__formGroup select:focus, .ContactSection-module__htTnOq__formGroup textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px #ff88711a;
+}
+
+.ContactSection-module__htTnOq__formGroup select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239999A8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+}
+
+.ContactSection-module__htTnOq__formGroup select option {
+  background: var(--color-gray-700);
+  color: var(--color-white);
+}
+
+@media (max-width: 992px) {
+  .ContactSection-module__htTnOq__contactGrid {
+    gap: var(--spacing-2xl);
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=app_components_ContactSection_module_css_bad6b30c._.single.css.map*/
