@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/components/WhatsAppFloat.module.css"],"sourcesContent":[".whatsappFloat {\n    position: fixed;\n    bottom: 30px;\n    right: 30px;\n    width: 60px;\n    height: 60px;\n    background: #25D366;\n    color: white;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 28px;\n    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);\n    z-index: 999;\n    animation: pulse 2s infinite;\n    transition: var(--transition-normal);\n}\n\n.whatsappFloat:hover {\n    transform: scale(1.1);\n    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);\n}\n\n@keyframes pulse {\n\n    0%,\n    100% {\n        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);\n    }\n\n    50% {\n        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);\n    }\n}\n\n@media (max-width: 768px) {\n    .whatsappFloat {\n        bottom: 20px;\n        right: 20px;\n        width: 55px;\n        height: 55px;\n        font-size: 26px;\n    }\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;AAmBA;;;;;AAKA;;;;;;;;;;AAYA;EACI"}}]
+}

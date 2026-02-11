@@ -1,0 +1,58 @@
+/* [project]/app/components/Navbar.module.css [app-client] (css) */
+.Navbar-module__pSp8Ga__navbar {
+  z-index: 1000;
+  padding: var(--spacing-lg) 0;
+  transition: var(--transition-normal);
+  background: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.Navbar-module__pSp8Ga__navbar.Navbar-module__pSp8Ga__scrolled {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: var(--spacing-md) 0;
+  box-shadow: var(--shadow-lg);
+  background: #0f0f1af2;
+}
+
+.Navbar-module__pSp8Ga__navContainer {
+  max-width: 1200px;
+  padding: 0 var(--spacing-lg);
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Navbar-module__pSp8Ga__logoText {
+  font-family: var(--font-heading);
+  background: var(--gradient-primary);
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.Navbar-module__pSp8Ga__navCta .btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+}
+
+@media (max-width: 480px) {
+  .Navbar-module__pSp8Ga__navCta .btn span {
+    display: none;
+  }
+
+  .Navbar-module__pSp8Ga__navCta .btn {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=app_components_Navbar_module_css_bad6b30c._.single.css.map*/
