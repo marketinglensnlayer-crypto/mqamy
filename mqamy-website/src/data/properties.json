@@ -1,0 +1,74 @@
+[
+    {
+        "id": "silverwood-court",
+        "name": "Silverwood Court",
+        "location": "Vienna, Austria",
+        "price": "$2,450,000",
+        "type": "Luxury Villa",
+        "image": "/images/property-1.jpg",
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "area": "4,500 sq ft",
+        "description": "An exquisite modernist villa nestled in the prestigious Vienna suburbs, featuring floor-to-ceiling windows and seamless indoor-outdoor living spaces."
+    },
+    {
+        "id": "crystal-heights",
+        "name": "Crystal Heights",
+        "location": "Sopot, Poland",
+        "price": "$1,850,000",
+        "type": "Penthouse",
+        "image": "/images/property-2.jpg",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "area": "3,200 sq ft",
+        "description": "A stunning penthouse with panoramic Baltic Sea views, featuring contemporary architecture and premium finishes throughout."
+    },
+    {
+        "id": "sunset-residences",
+        "name": "Sunset Residences",
+        "location": "Oslo, Norway",
+        "price": "$3,200,000",
+        "type": "Modern Estate",
+        "image": "/images/property-3.jpg",
+        "bedrooms": 6,
+        "bathrooms": 5,
+        "area": "5,800 sq ft",
+        "description": "A spectacular Nordic estate offering breathtaking fjord views, sustainable design, and world-class amenities."
+    },
+    {
+        "id": "azure-villa",
+        "name": "Azure Villa",
+        "location": "Dubai, UAE",
+        "price": "$4,500,000",
+        "type": "Waterfront",
+        "image": "/images/property-4.jpg",
+        "bedrooms": 7,
+        "bathrooms": 8,
+        "area": "8,000 sq ft",
+        "description": "An iconic waterfront villa on The Palm featuring private beach access, infinity pool, and unparalleled luxury."
+    },
+    {
+        "id": "monte-verde",
+        "name": "Monte Verde Estate",
+        "location": "Lisbon, Portugal",
+        "price": "$2,100,000",
+        "type": "Historic Villa",
+        "image": "/images/property-5.jpg",
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "area": "4,200 sq ft",
+        "description": "A beautifully restored historic villa with modern amenities, lush gardens, and stunning city views."
+    },
+    {
+        "id": "alpine-retreat",
+        "name": "Alpine Retreat",
+        "location": "Zurich, Switzerland",
+        "price": "$5,800,000",
+        "type": "Mountain Estate",
+        "image": "/images/property-6.jpg",
+        "bedrooms": 8,
+        "bathrooms": 7,
+        "area": "7,500 sq ft",
+        "description": "An exclusive Alpine estate offering ski-in/ski-out access, spa facilities, and majestic mountain panoramas."
+    }
+]
