@@ -1,0 +1,46 @@
+/* [project]/app/components/WhatsAppFloat.module.css [app-client] (css) */
+.WhatsAppFloat-module__jNXcWW__whatsappFloat {
+  color: #fff;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  transition: var(--transition-normal);
+  background: #25d366;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  animation: 2s infinite WhatsAppFloat-module__jNXcWW__pulse;
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0 4px 20px #25d36666;
+}
+
+.WhatsAppFloat-module__jNXcWW__whatsappFloat:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px #25d36680;
+}
+
+@keyframes WhatsAppFloat-module__jNXcWW__pulse {
+  0%, 100% {
+    box-shadow: 0 4px 20px #25d36666;
+  }
+
+  50% {
+    box-shadow: 0 4px 30px #25d36699;
+  }
+}
+
+@media (max-width: 768px) {
+  .WhatsAppFloat-module__jNXcWW__whatsappFloat {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/*# sourceMappingURL=app_components_WhatsAppFloat_module_css_bad6b30c._.single.css.map*/

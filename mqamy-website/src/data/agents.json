@@ -1,0 +1,26 @@
+[
+    {
+        "id": "ahmed-wazir",
+        "name": "Ahmed Wazir",
+        "title": "Real Estate Agent",
+        "licenseNumber": "BRN#85446",
+        "image": "/images/agent-1.jpg",
+        "bio": "A licensed real estate professional in Dubai who specializes in guiding international investors into the local market. Fluent in English, Arabic, Hindi, and Urdu, he makes complex property decisions simple and accessible for clients from diverse backgrounds."
+    },
+    {
+        "id": "sarah-mitchell",
+        "name": "Sarah Mitchell",
+        "title": "Senior Property Consultant",
+        "licenseNumber": "BRN#72891",
+        "image": "/images/agent-2.jpg",
+        "bio": "With over 15 years of experience in luxury real estate, Sarah specializes in high-end residential properties. Her deep market knowledge and client-first approach have made her a trusted advisor for discerning buyers worldwide."
+    },
+    {
+        "id": "omar-hassan",
+        "name": "Omar Hassan",
+        "title": "Investment Specialist",
+        "licenseNumber": "BRN#63157",
+        "image": "/images/agent-3.jpg",
+        "bio": "Omar brings a wealth of experience in real estate investment and portfolio management. He helps clients identify high-yield opportunities and build long-term wealth through strategic property investments."
+    }
+]

@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+/* ===================================
+   MQAMY Design System - Global Styles
+   =================================== */
+
+:root {
+  /* Primary Colors */
+  --primary: #104550;
+  --primary-light: #1a6070;
+  --primary-dark: #0a3038;
+
+  /* Accent Colors */
+  --accent-coral: #FF8871;
+  --accent-blue: #317bff;
+
+  /* Text Colors */
+  --heading: #161616;
+  --body: #676A70;
+  --body-light: #8A8D93;
+
+  /* Background Colors */
+  --background: #EAE9E1;
+  --surface: #FFFFFF;
+  --surface-alt: #F4F2EA;
+
+  /* Footer */
+  --footer-bg: #003A51;
+  --footer-text: #A5DDFF;
+
+  /* Hover States */
+  --hover: #00A9CA;
+
+  /* Spacing */
+  --section-padding: 6rem;
+  --container-max: 1400px;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent-coral: var(--accent-coral);
+  --color-accent-blue: var(--accent-blue);
+  --color-heading: var(--heading);
+  --color-body: var(--body);
+  --color-body-light: var(--body-light);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-text: var(--footer-text);
+  --color-hover: var(--hover);
+
+  /* Fonts */
+  --font-heading: var(--font-figtree);
+  --font-body: var(--font-manrope);
+
+  /* 0px border radius - sharp edges */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-full: 0px;
+}
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--body);
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-figtree), system-ui, sans-serif;
+  color: var(--heading);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--body);
+}
+
+/* Selection */
+::selection {
+  background: var(--primary);
+  color: var(--surface);
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* Container */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section Spacing */
+.section {
+  padding: var(--section-padding) 0;
+}
+
+/* Button Base Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  font-family: var(--font-figtree), system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--surface);
+}
+
+.btn-primary:hover {
+  background: var(--primary-light);
+  color: var(--surface);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--heading);
+  color: var(--heading);
+}
+
+.btn-outline:hover {
+  background: var(--heading);
+  color: var(--surface);
+}
+
+/* Card Styles */
+.card {
+  background: var(--surface);
+  border-radius: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes */
+.text-coral {
+  color: var(--accent-coral);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-surface {
+  background: var(--surface);
+}
+
+.bg-surface-alt {
+  background: var(--surface-alt);
+}
+
+/* Custom Scrollbar */
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}

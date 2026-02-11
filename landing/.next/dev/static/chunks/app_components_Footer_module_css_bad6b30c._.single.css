@@ -1,0 +1,96 @@
+/* [project]/app/components/Footer.module.css [app-client] (css) */
+.Footer-module__nhiC3q__footer {
+  padding: var(--spacing-3xl) 0 var(--spacing-xl);
+  background: var(--color-dark);
+  border-top: 1px solid #ffffff0d;
+}
+
+.Footer-module__nhiC3q__footerContent {
+  padding-bottom: var(--spacing-2xl);
+  margin-bottom: var(--spacing-2xl);
+  border-bottom: 1px solid #ffffff1a;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.Footer-module__nhiC3q__logoText {
+  font-family: var(--font-heading);
+  background: var(--gradient-primary);
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.Footer-module__nhiC3q__footerBrand p {
+  color: var(--color-gray-500);
+  margin-top: var(--spacing-sm);
+  font-size: .9rem;
+}
+
+.Footer-module__nhiC3q__footerSocial {
+  gap: var(--spacing-md);
+  display: flex;
+}
+
+.Footer-module__nhiC3q__footerSocial a {
+  border-radius: var(--radius-md);
+  width: 44px;
+  height: 44px;
+  color: var(--color-gray-400);
+  transition: var(--transition-normal);
+  background: #ffffff0d;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Footer-module__nhiC3q__footerSocial a:hover {
+  background: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.Footer-module__nhiC3q__footerBottom {
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Footer-module__nhiC3q__footerBottom p {
+  color: var(--color-gray-500);
+  font-size: .85rem;
+}
+
+.Footer-module__nhiC3q__footerLinks {
+  gap: var(--spacing-xl);
+  display: flex;
+}
+
+.Footer-module__nhiC3q__footerLinks a {
+  color: var(--color-gray-500);
+  font-size: .85rem;
+}
+
+.Footer-module__nhiC3q__footerLinks a:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .Footer-module__nhiC3q__footerContent {
+    text-align: center;
+    gap: var(--spacing-xl);
+    flex-direction: column;
+  }
+
+  .Footer-module__nhiC3q__footerBottom {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=app_components_Footer_module_css_bad6b30c._.single.css.map*/

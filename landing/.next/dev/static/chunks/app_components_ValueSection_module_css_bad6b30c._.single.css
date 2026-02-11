@@ -1,0 +1,66 @@
+/* [project]/app/components/ValueSection.module.css [app-client] (css) */
+.ValueSection-module__ZZm3Ra__valueSection {
+  padding: var(--spacing-4xl) 0;
+  background: var(--color-dark);
+}
+
+.ValueSection-module__ZZm3Ra__valueGrid {
+  gap: var(--spacing-xl);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: grid;
+}
+
+.ValueSection-module__ZZm3Ra__valueCard {
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  text-align: center;
+  transition: var(--transition-normal);
+  opacity: 0;
+  background: #ffffff08;
+  border: 1px solid #ffffff14;
+  transform: translateY(30px);
+}
+
+.ValueSection-module__ZZm3Ra__valueCard.ValueSection-module__ZZm3Ra__active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ValueSection-module__ZZm3Ra__valueCard:hover {
+  background: #ffffff0d;
+  border-color: #ff88714d;
+  transform: translateY(-5px);
+}
+
+.ValueSection-module__ZZm3Ra__valueIcon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  color: var(--color-primary);
+  background: #ff88711a;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  display: flex;
+}
+
+.ValueSection-module__ZZm3Ra__valueCard h3 {
+  font-family: var(--font-heading);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.25rem;
+}
+
+.ValueSection-module__ZZm3Ra__valueCard p {
+  color: var(--color-gray-400);
+  font-size: .95rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 480px) {
+  .ValueSection-module__ZZm3Ra__valueGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=app_components_ValueSection_module_css_bad6b30c._.single.css.map*/
